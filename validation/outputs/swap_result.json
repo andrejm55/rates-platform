@@ -1,0 +1,207 @@
+{
+    "request_type": "swap",
+    "result": {
+        "annuity": 4316556.34684758,
+        "cash_flows": [
+            {
+                "amount": 40109.5890410959,
+                "description": "Fixed coupon",
+                "discount_factor": 0.925973654860907,
+                "payment_date": "2028-07-31",
+                "present_value": 37140.4227593526
+            },
+            {
+                "amount": 40000,
+                "description": "Fixed coupon",
+                "discount_factor": 0.892702766477442,
+                "payment_date": "2029-07-30",
+                "present_value": 35708.1106590977
+            },
+            {
+                "amount": 40000,
+                "description": "Fixed coupon",
+                "discount_factor": 0.860970139958585,
+                "payment_date": "2030-07-29",
+                "present_value": 34438.8055983434
+            },
+            {
+                "amount": 40000,
+                "description": "Fixed coupon",
+                "discount_factor": 0.830856705620223,
+                "payment_date": "2031-07-29",
+                "present_value": 33234.2682248089
+            },
+            {
+                "amount": 40109.5890410959,
+                "description": "Fixed coupon",
+                "discount_factor": 0.801320766447387,
+                "payment_date": "2032-07-29",
+                "present_value": 32140.6466323007
+            },
+            {
+                "amount": 9947.93807805301,
+                "description": "Floating coupon projected from GBP-TERM-3M-FORWARD",
+                "discount_factor": 0.952119380905201,
+                "payment_date": "2027-10-29",
+                "present_value": 9471.62464415911
+            },
+            {
+                "amount": 9817.85431933931,
+                "description": "Floating coupon projected from GBP-TERM-3M-FORWARD",
+                "discount_factor": 0.943004908344959,
+                "payment_date": "2028-01-31",
+                "present_value": 9258.28481255273
+            },
+            {
+                "amount": 9582.6881202416,
+                "description": "Floating coupon projected from GBP-TERM-3M-FORWARD",
+                "discount_factor": 0.934674894644747,
+                "payment_date": "2028-04-28",
+                "present_value": 8956.69800920029
+            },
+            {
+                "amount": 9463.90777930514,
+                "description": "Floating coupon projected from GBP-TERM-3M-FORWARD",
+                "discount_factor": 0.925973654860907,
+                "payment_date": "2028-07-31",
+                "present_value": 8763.32927566975
+            },
+            {
+                "amount": 9723.12980937968,
+                "description": "Floating coupon projected from GBP-TERM-3M-FORWARD",
+                "discount_factor": 0.91745704142363,
+                "payment_date": "2028-10-30",
+                "present_value": 8920.55390829139
+            },
+            {
+                "amount": 9658.10014589417,
+                "description": "Floating coupon projected from GBP-TERM-3M-FORWARD",
+                "discount_factor": 0.909075263816582,
+                "payment_date": "2029-01-29",
+                "present_value": 8779.93993809571
+            },
+            {
+                "amount": 9384.25873551247,
+                "description": "Floating coupon projected from GBP-TERM-3M-FORWARD",
+                "discount_factor": 0.900826052934158,
+                "payment_date": "2029-04-30",
+                "present_value": 8453.58475642459
+            },
+            {
+                "amount": 9429.55027969959,
+                "description": "Floating coupon projected from GBP-TERM-3M-FORWARD",
+                "discount_factor": 0.892702766477442,
+                "payment_date": "2029-07-30",
+                "present_value": 8417.78562132596
+            },
+            {
+                "amount": 9591.62572228089,
+                "description": "Floating coupon projected from GBP-TERM-3M-FORWARD",
+                "discount_factor": 0.884603876627613,
+                "payment_date": "2029-10-29",
+                "present_value": 8484.78929709081
+            },
+            {
+                "amount": 9546.11037217914,
+                "description": "Floating coupon projected from GBP-TERM-3M-FORWARD",
+                "discount_factor": 0.876529445261972,
+                "payment_date": "2030-01-29",
+                "present_value": 8367.44682893574
+            },
+            {
+                "amount": 9293.6025556663,
+                "description": "Floating coupon projected from GBP-TERM-3M-FORWARD",
+                "discount_factor": 0.868739248323871,
+                "payment_date": "2030-04-29",
+                "present_value": 8073.71729843035
+            },
+            {
+                "amount": 9353.06368548877,
+                "description": "Floating coupon projected from GBP-TERM-3M-FORWARD",
+                "discount_factor": 0.860970139958585,
+                "payment_date": "2030-07-29",
+                "present_value": 8052.70855033682
+            },
+            {
+                "amount": 9411.06043250635,
+                "description": "Floating coupon projected from GBP-TERM-3M-FORWARD",
+                "discount_factor": 0.853224020442875,
+                "payment_date": "2030-10-29",
+                "present_value": 8029.74281885394
+            },
+            {
+                "amount": 9365.55311235006,
+                "description": "Floating coupon projected from GBP-TERM-3M-FORWARD",
+                "discount_factor": 0.845585196646703,
+                "payment_date": "2031-01-29",
+                "present_value": 7919.37307021166
+            },
+            {
+                "amount": 9117.01369470228,
+                "description": "Floating coupon projected from GBP-TERM-3M-FORWARD",
+                "discount_factor": 0.838214683848722,
+                "payment_date": "2031-04-29",
+                "present_value": 7642.01475174934
+            },
+            {
+                "amount": 9180.81946258864,
+                "description": "Floating coupon projected from GBP-TERM-3M-FORWARD",
+                "discount_factor": 0.830856705620223,
+                "payment_date": "2031-07-29",
+                "present_value": 7627.94541358042
+            },
+            {
+                "amount": 9434.34485178532,
+                "description": "Floating coupon projected from GBP-TERM-3M-FORWARD",
+                "discount_factor": 0.823308113292662,
+                "payment_date": "2031-10-29",
+                "present_value": 7767.37266007572
+            },
+            {
+                "amount": 9408.33982931453,
+                "description": "Floating coupon projected from GBP-TERM-3M-FORWARD",
+                "discount_factor": 0.815843651693258,
+                "payment_date": "2032-01-29",
+                "present_value": 7675.73432271909
+            },
+            {
+                "amount": 9280.02805345487,
+                "description": "Floating coupon projected from GBP-TERM-3M-FORWARD",
+                "discount_factor": 0.808542064215245,
+                "payment_date": "2032-04-29",
+                "present_value": 7503.29303831578
+            },
+            {
+                "amount": 9254.5891149049,
+                "description": "Floating coupon projected from GBP-TERM-3M-FORWARD",
+                "discount_factor": 0.801320766447387,
+                "payment_date": "2032-07-29",
+                "present_value": 7415.89444271124
+            }
+        ],
+        "currency": "GBP",
+        "diagnostics": {
+            "converged": true,
+            "engine": "MultiCurveSwapEngine",
+            "iterations": 0,
+            "metrics": {
+                "fixed_coupon_count": 5,
+                "fixed_leg_annuity": 4.31655634684758,
+                "fixed_leg_pv": 172662.253873903,
+                "floating_coupon_count": 20,
+                "floating_leg_pv": 165581.83345873
+            },
+            "model": "DiscountProjectionCurve",
+            "standard_error": 0,
+            "warnings": [
+                "Floating coupons are projected coupon-by-coupon from the configured forward curve; historical fixings, publication lags and overnight compounding are simplified in this release."
+            ]
+        },
+        "implied_volatility": 0,
+        "par_rate": 0.0383597062458495,
+        "present_value": -7080.42041517276,
+        "sensitivities": {}
+    },
+    "snapshot_id": "GBP-DEMO-2026-07-27",
+    "success": true
+}

@@ -1,0 +1,35 @@
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: rates_platform
+      POSTGRES_USER: rates
+      POSTGRES_PASSWORD: rates
+    ports:
+      - "5432:5432"
+    volumes:
+      - rates_postgres_data:/var/lib/postgresql/data
+      - ./deploy/postgres/init.sql:/docker-entrypoint-initdb.d/001-init.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U rates -d rates_platform"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  api:
+    build:
+      context: .
+    command: ["/app/.venv/bin/python", "-m", "uvicorn", "apps.server.api:app", "--host", "0.0.0.0", "--port", "8000"]
+    environment:
+      DATABASE_URL: postgresql://rates:rates@postgres:5432/rates_platform
+      RATES_API_KEYS: ${RATES_API_KEYS:-dev-api-key}
+      RATES_RATE_LIMIT_PER_MINUTE: ${RATES_RATE_LIMIT_PER_MINUTE:-120}
+      RATES_MODEL_VERSION: ${RATES_MODEL_VERSION:-0.1.0}
+    ports:
+      - "8000:8000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+volumes:
+  rates_postgres_data:

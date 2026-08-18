@@ -1,0 +1,43 @@
+{
+  "cases": {
+    "bermudan": [
+      {
+        "paths": 2000,
+        "present_value": 18022.334334252,
+        "standard_error": 511.019704843087
+      },
+      {
+        "paths": 5000,
+        "present_value": 18142.7733472919,
+        "standard_error": 321.618859586868
+      },
+      {
+        "paths": 10000,
+        "present_value": 18137.384515384,
+        "standard_error": 228.668166133502
+      }
+    ],
+    "range_accrual": [
+      {
+        "paths": 2000,
+        "present_value": 1011515.51158199,
+        "standard_error": 977.355440968476
+      },
+      {
+        "paths": 5000,
+        "present_value": 1011960.14852114,
+        "standard_error": 605.232072601527
+      },
+      {
+        "paths": 10000,
+        "present_value": 1012070.22868665,
+        "standard_error": 425.361363819563
+      }
+    ]
+  },
+  "path_counts": [
+    2000,
+    5000,
+    10000
+  ]
+}

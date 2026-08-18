@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="472" viewBox="0 0 980 472">
+  <rect width="980" height="472" fill="#f7f9fc"/>
+  <rect x="28" y="26" width="924" height="420" rx="8" fill="#ffffff" stroke="#c9d2df"/>
+  <rect x="28" y="26" width="924" height="10" rx="5" fill="#2457a6"/>
+  <text x="48" y="82" class="title">Rates Engine Demo Summary</text>
+  <text x="48" y="106" class="sub">Generated from runnable demo validation artifacts</text>
+  <text x="48" y="122" class="label">Vanilla IRS</text><text x="932" y="122" class="value" text-anchor="end">PV GBP -7,080.42, par rate 0.0383597</text><line x1="48" y1="140" x2="932" y2="140" stroke="#d8dee8" stroke-width="1"/>
+<text x="48" y="176" class="label">European swaption</text><text x="932" y="176" class="value" text-anchor="end">PV GBP 10,229.99, par rate 0.0383597</text><line x1="48" y1="194" x2="932" y2="194" stroke="#d8dee8" stroke-width="1"/>
+<text x="48" y="230" class="label">Bermudan swaption</text><text x="932" y="230" class="value" text-anchor="end">PV GBP 18,137.38</text><line x1="48" y1="248" x2="932" y2="248" stroke="#d8dee8" stroke-width="1"/>
+<text x="48" y="284" class="label">Callable range accrual</text><text x="932" y="284" class="value" text-anchor="end">PV GBP 1,012,070.23</text><line x1="48" y1="302" x2="932" y2="302" stroke="#d8dee8" stroke-width="1"/>
+<text x="48" y="338" class="label">Multi-curve bootstrap</text><text x="932" y="338" class="value" text-anchor="end">max abs residuals: discount 4.857e-17, projection 1.527e-16</text><line x1="48" y1="356" x2="932" y2="356" stroke="#d8dee8" stroke-width="1"/>
+<text x="48" y="392" class="label">SABR smile calibration</text><text x="932" y="392" class="value" text-anchor="end">RMSE 0.000304384, alpha 0.051029, rho -0.12415, nu 0.74408</text><line x1="48" y1="410" x2="932" y2="410" stroke="#d8dee8" stroke-width="1"/>
+  <style>
+    .title { font: 700 28px Arial, sans-serif; fill: #182230; }
+    .sub { font: 400 14px Arial, sans-serif; fill: #667085; }
+    .label { font: 600 18px Arial, sans-serif; fill: #344054; }
+    .value { font: 500 18px Arial, sans-serif; fill: #101828; }
+  </style>
+</svg>

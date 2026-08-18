@@ -1,0 +1,90 @@
+{
+    "request_type": "multi_curve_bootstrap",
+    "result": {
+        "converged": true,
+        "discount_curve": {
+            "curve_id": "GBP-OIS-CALIBRATED",
+            "discount_factors": [
+                0.990049997524875,
+                0.980488283165016,
+                0.96237128284092,
+                0.927795624152838,
+                0.894999236394271,
+                0.834171673821866,
+                0.700304760490727
+            ],
+            "times": [
+                0.25,
+                0.5,
+                1,
+                2,
+                3,
+                5,
+                10
+            ],
+            "zero_rates": [
+                0.0399993383133337,
+                0.0394091665486709,
+                0.0383549538764639,
+                0.0374719015223098,
+                0.036977471299468,
+                0.0362632107790462,
+                0.0356239666556069
+            ]
+        },
+        "discount_residuals": [
+            0,
+            0,
+            0,
+            4.85722573273506e-17,
+            1.38777878078145e-17,
+            -1.38777878078145e-17,
+            -1.38777878078145e-17
+        ],
+        "projection_curve": {
+            "curve_id": "GBP-TERM-3M-CALIBRATED",
+            "discount_factors": [
+                0.989853996535511,
+                0.979859430345982,
+                0.970061806104328,
+                0.9604334606612,
+                0.926937939963015,
+                0.89341717996201,
+                0.831335709835847
+            ],
+            "times": [
+                0.25,
+                0.5,
+                0.75,
+                1,
+                2,
+                3,
+                5
+            ],
+            "zero_rates": [
+                0.0407912999057846,
+                0.0406923120565225,
+                0.0405273225083503,
+                0.0403705749033409,
+                0.0379343314192791,
+                0.0375672134611058,
+                0.0369443165501082
+            ]
+        },
+        "projection_residuals": [
+            0,
+            -5.55111512312578e-17,
+            -6.93889390390723e-18,
+            -1.52655665885959e-16,
+            -9.71445146547012e-17,
+            1.38777878078145e-17,
+            -2.77555756156289e-17
+        ],
+        "warnings": [
+            "Bootstrap uses simple deposit rates and regular fixed-for-floating par swaps with one shared discount curve.",
+            "Multi-curve calibration supports simple OIS discount bootstrapping and projection nodes from deposits, FRAs, futures and regular basis swaps; it does not yet implement a global nonlinear solve."
+        ]
+    },
+    "snapshot_id": "GBP-DEMO-2026-07-27",
+    "success": true
+}

@@ -1,0 +1,26 @@
+{
+    "request_type": "swaption_risk",
+    "result": {
+        "base_present_value": 10561.7259086764,
+        "scenario_pnl": {
+            "discount_rates_down_100bp": 138.195284086883,
+            "discount_rates_up_100bp": -134.962295690848,
+            "projection_rates_down_100bp": -9537.91359581286,
+            "projection_rates_up_100bp": 29617.1053470267,
+            "vol_down_20pct_relative": -2691.58200818626,
+            "vol_up_20pct_relative": 2715.11888413446
+        },
+        "sensitivities": {
+            "analytic_vega_per_1pct": 16910.4415087619,
+            "discount_curve_parallel_pv01": -1.36561249487477,
+            "parallel_pv01": 186.266151251303,
+            "projection_curve_parallel_pv01": 187.631763746178,
+            "vega_per_1bp_vol": 169.103870327886
+        },
+        "warnings": [
+            "Finite-difference PV01 bumps zero-rate nodes directly and does not rebuild curves from instrument quotes."
+        ]
+    },
+    "snapshot_id": "GBP-DEMO-2026-07-27",
+    "success": true
+}

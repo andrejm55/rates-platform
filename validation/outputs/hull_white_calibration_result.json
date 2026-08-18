@@ -1,0 +1,16 @@
+{
+    "request_type": "hull_white_calibration",
+    "result": {
+        "converged": true,
+        "mean_reversion": 0.03,
+        "model_volatilities": [
+            0.0457428423205939,
+            0.0450719586508238,
+            0.0803017146091993
+        ],
+        "rmse": 7.46651475784348e-13,
+        "volatility": 0.0100000000001298
+    },
+    "snapshot_id": "GBP-DEMO-2026-07-27",
+    "success": true
+}

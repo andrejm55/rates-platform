@@ -1,0 +1,33 @@
+{
+    "request_type": "callable_range_accrual",
+    "result": {
+        "annuity": 0,
+        "cash_flows": [],
+        "currency": "GBP",
+        "diagnostics": {
+            "converged": true,
+            "engine": "LeastSquaresMonteCarloCallableRangeAccrualEngine",
+            "iterations": 0,
+            "metrics": {
+                "issuer_call_probability_2027-07-29": 0.7177,
+                "issuer_call_probability_2028-07-29": 0.7069,
+                "issuer_call_probability_2029-07-29": 0.7136,
+                "issuer_call_probability_2030-07-29": 0.7722,
+                "paths": 10000,
+                "time_steps": 61
+            },
+            "model": "HullWhiteOneFactorApproximation",
+            "standard_error": 425.361363819563,
+            "warnings": [
+                "Range accrual observations are discretised to the simulation grid rather than daily business-day observations.",
+                "Issuer call decisions use a quadratic one-factor regression and omit funding, credit, and smile effects."
+            ]
+        },
+        "implied_volatility": 0,
+        "par_rate": 0,
+        "present_value": 1012070.22868665,
+        "sensitivities": {}
+    },
+    "snapshot_id": "GBP-DEMO-2026-07-27",
+    "success": true
+}

@@ -1,0 +1,87 @@
+name: Validation
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  cpp-validation:
+    name: C++ validation (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os:
+          - ubuntu-latest
+          - macos-latest
+          - windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Configure
+        run: cmake -S . -B build -DCMAKE_BUILD_TYPE=Release -DRATES_BUILD_TESTS=ON
+      - name: Build
+        run: cmake --build build --config Release --parallel
+      - name: Test
+        run: ctest --test-dir build --build-config Release --output-on-failure
+
+  interface-validation:
+    name: API, GUI, and Monte Carlo validation
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install Python interface dependencies
+        run: python -m pip install --upgrade pip && python -m pip install -r requirements.txt
+      - name: Configure
+        run: cmake -S . -B build -DCMAKE_BUILD_TYPE=Release -DRATES_BUILD_TESTS=ON
+      - name: Build
+        run: cmake --build build --config Release --parallel
+      - name: Run examples
+        run: ./scripts/run_examples.sh
+      - name: API integration test
+        run: python scripts/validation/api_integration_test.py
+      - name: GUI server smoke test
+        run: python scripts/validation/gui_server_smoke.py
+      - name: Monte Carlo convergence report
+        run: python scripts/validation/monte_carlo_convergence.py
+
+  database-validation:
+    name: PostgreSQL audit validation
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_DB: rates_platform
+          POSTGRES_USER: rates
+          POSTGRES_PASSWORD: rates
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U rates -d rates_platform"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install Python interface dependencies
+        run: python -m pip install --upgrade pip && python -m pip install -r requirements.txt
+      - name: Validate Docker Compose configuration
+        run: docker compose config
+      - name: Configure
+        run: cmake -S . -B build -DCMAKE_BUILD_TYPE=Release -DRATES_BUILD_TESTS=ON
+      - name: Build
+        run: cmake --build build --config Release --parallel
+      - name: PostgreSQL API audit integration test
+        env:
+          DATABASE_URL: postgresql://rates:rates@127.0.0.1:5432/rates_platform
+          RATES_API_KEYS: db-test-key
+          RATES_MODEL_VERSION: ci-db-validation
+        run: python scripts/validation/db_audit_integration_test.py

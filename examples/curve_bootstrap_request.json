@@ -1,0 +1,203 @@
+{
+  "market": {
+    "valuation_date": "2026-07-27",
+    "snapshot_id": "GBP-DEMO-2026-07-27",
+    "curves": [
+      {
+        "id": "GBP-SONIA-DISCOUNT",
+        "times": [
+          0.25,
+          0.5,
+          1.0,
+          2.0,
+          3.0,
+          5.0,
+          7.0,
+          10.0,
+          15.0,
+          20.0,
+          30.0
+        ],
+        "zero_rates": [
+          0.0405,
+          0.04,
+          0.0393,
+          0.0382,
+          0.0377,
+          0.037,
+          0.0367,
+          0.0364,
+          0.0361,
+          0.0359,
+          0.0357
+        ]
+      },
+      {
+        "id": "GBP-TERM-3M-FORWARD",
+        "times": [
+          0.25,
+          0.5,
+          1.0,
+          2.0,
+          3.0,
+          5.0,
+          7.0,
+          10.0,
+          15.0,
+          20.0,
+          30.0
+        ],
+        "zero_rates": [
+          0.041,
+          0.0406,
+          0.04,
+          0.039,
+          0.0385,
+          0.0378,
+          0.0374,
+          0.0371,
+          0.0368,
+          0.0366,
+          0.0364
+        ]
+      }
+    ],
+    "volatility_smiles": [
+      {
+        "id": "GBP-SWAPTION-NORMAL",
+        "normal": true,
+        "strikes": [
+          0.005,
+          0.015,
+          0.025,
+          0.035,
+          0.045,
+          0.055,
+          0.065,
+          0.075
+        ],
+        "volatilities": [
+          0.0105,
+          0.0093,
+          0.0085,
+          0.008,
+          0.008,
+          0.0084,
+          0.009,
+          0.0098
+        ]
+      },
+      {
+        "id": "GBP-SWAPTION-LOGNORMAL",
+        "normal": false,
+        "strikes": [
+          0.005,
+          0.015,
+          0.025,
+          0.035,
+          0.045,
+          0.055,
+          0.065,
+          0.075
+        ],
+        "volatilities": [
+          0.45,
+          0.32,
+          0.255,
+          0.22,
+          0.205,
+          0.205,
+          0.215,
+          0.235
+        ]
+      }
+    ]
+  },
+  "request": {
+    "type": "multi_curve_bootstrap",
+    "discount_curve_id": "GBP-OIS-CALIBRATED",
+    "projection_curve_id": "GBP-TERM-3M-CALIBRATED",
+    "ois_deposits": [
+      {
+        "maturity": 0.25,
+        "rate": 0.0402
+      },
+      {
+        "maturity": 0.5,
+        "rate": 0.0398
+      },
+      {
+        "maturity": 1.0,
+        "rate": 0.0391
+      }
+    ],
+    "ois_swaps": [
+      {
+        "maturity": 2.0,
+        "par_rate": 0.0382,
+        "payment_interval": 1.0
+      },
+      {
+        "maturity": 3.0,
+        "par_rate": 0.0377,
+        "payment_interval": 1.0
+      },
+      {
+        "maturity": 5.0,
+        "par_rate": 0.037,
+        "payment_interval": 1.0
+      },
+      {
+        "maturity": 10.0,
+        "par_rate": 0.0364,
+        "payment_interval": 1.0
+      }
+    ],
+    "projection_deposits": [
+      {
+        "maturity": 0.25,
+        "rate": 0.041
+      }
+    ],
+    "fras": [
+      {
+        "start": 0.25,
+        "end": 0.5,
+        "rate": 0.0408
+      },
+      {
+        "start": 0.5,
+        "end": 0.75,
+        "rate": 0.0404
+      }
+    ],
+    "futures": [
+      {
+        "start": 0.75,
+        "end": 1.0,
+        "price": 95.98,
+        "convexity_adjustment": 0.0001
+      }
+    ],
+    "basis_swaps": [
+      {
+        "maturity": 2.0,
+        "par_rate": 0.039,
+        "basis_spread": 0.0008,
+        "payment_interval": 0.25
+      },
+      {
+        "maturity": 3.0,
+        "par_rate": 0.0385,
+        "basis_spread": 0.0007,
+        "payment_interval": 0.25
+      },
+      {
+        "maturity": 5.0,
+        "par_rate": 0.0378,
+        "basis_spread": 0.0006,
+        "payment_interval": 0.25
+      }
+    ]
+  }
+}

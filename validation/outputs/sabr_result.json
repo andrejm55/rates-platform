@@ -1,0 +1,22 @@
+{
+    "request_type": "sabr_calibration",
+    "result": {
+        "alpha": 0.0510292741204189,
+        "beta": 0.5,
+        "converged": true,
+        "iterations": 5281,
+        "model_volatilities": [
+            0.279890994073064,
+            0.235338347192744,
+            0.20954914248962,
+            0.205345572833379,
+            0.214880860630713
+        ],
+        "nu": 0.744084959482349,
+        "rho": -0.124148472593313,
+        "rmse": 0.00030438409357067,
+        "shift": 0.03
+    },
+    "snapshot_id": "GBP-DEMO-2026-07-27",
+    "success": true
+}

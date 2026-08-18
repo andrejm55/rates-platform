@@ -1,0 +1,35 @@
+{
+    "request_type": "bermudan_swaption",
+    "result": {
+        "annuity": 0,
+        "cash_flows": [],
+        "currency": "GBP",
+        "diagnostics": {
+            "converged": true,
+            "engine": "LeastSquaresMonteCarloBermudanEngine",
+            "iterations": 0,
+            "metrics": {
+                "exercise_probability_2027-07-29": 0.3242,
+                "exercise_probability_2028-07-29": 0.027,
+                "exercise_probability_2029-07-29": 0.0075,
+                "exercise_probability_2030-07-29": 0.1994,
+                "mean_reversion": 0.03,
+                "model_volatility": 0.01,
+                "paths": 10000,
+                "time_steps": 49
+            },
+            "model": "HullWhiteOneFactorApproximation",
+            "standard_error": 228.668166133502,
+            "warnings": [
+                "Hull-White conditional bond prices use a curve-consistent Gaussian-factor approximation rather than a fully calibrated theta(t) implementation.",
+                "LSMC regression uses quadratic basis functions and should be convergence-tested for each product."
+            ]
+        },
+        "implied_volatility": 0,
+        "par_rate": 0,
+        "present_value": 18137.384515384,
+        "sensitivities": {}
+    },
+    "snapshot_id": "GBP-DEMO-2026-07-27",
+    "success": true
+}

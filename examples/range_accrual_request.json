@@ -1,0 +1,141 @@
+{
+  "market": {
+    "valuation_date": "2026-07-27",
+    "snapshot_id": "GBP-DEMO-2026-07-27",
+    "curves": [
+      {
+        "id": "GBP-SONIA-DISCOUNT",
+        "times": [
+          0.25,
+          0.5,
+          1.0,
+          2.0,
+          3.0,
+          5.0,
+          7.0,
+          10.0,
+          15.0,
+          20.0,
+          30.0
+        ],
+        "zero_rates": [
+          0.0405,
+          0.04,
+          0.0393,
+          0.0382,
+          0.0377,
+          0.037,
+          0.0367,
+          0.0364,
+          0.0361,
+          0.0359,
+          0.0357
+        ]
+      },
+      {
+        "id": "GBP-TERM-3M-FORWARD",
+        "times": [
+          0.25,
+          0.5,
+          1.0,
+          2.0,
+          3.0,
+          5.0,
+          7.0,
+          10.0,
+          15.0,
+          20.0,
+          30.0
+        ],
+        "zero_rates": [
+          0.041,
+          0.0406,
+          0.04,
+          0.039,
+          0.0385,
+          0.0378,
+          0.0374,
+          0.0371,
+          0.0368,
+          0.0366,
+          0.0364
+        ]
+      }
+    ],
+    "volatility_smiles": [
+      {
+        "id": "GBP-SWAPTION-NORMAL",
+        "normal": true,
+        "strikes": [
+          0.005,
+          0.015,
+          0.025,
+          0.035,
+          0.045,
+          0.055,
+          0.065,
+          0.075
+        ],
+        "volatilities": [
+          0.0105,
+          0.0093,
+          0.0085,
+          0.008,
+          0.008,
+          0.0084,
+          0.009,
+          0.0098
+        ]
+      },
+      {
+        "id": "GBP-SWAPTION-LOGNORMAL",
+        "normal": false,
+        "strikes": [
+          0.005,
+          0.015,
+          0.025,
+          0.035,
+          0.045,
+          0.055,
+          0.065,
+          0.075
+        ],
+        "volatilities": [
+          0.45,
+          0.32,
+          0.255,
+          0.22,
+          0.205,
+          0.205,
+          0.215,
+          0.235
+        ]
+      }
+    ]
+  },
+  "request": {
+    "type": "callable_range_accrual",
+    "id": "GBP-CALLABLE-RANGE",
+    "effective_date": "2026-07-29",
+    "maturity_date": "2031-07-29",
+    "notional": 1000000,
+    "coupon_rate": 0.06,
+    "lower_bound": 0.01,
+    "upper_bound": 0.06,
+    "issuer_call_dates": [
+      "2027-07-29",
+      "2028-07-29",
+      "2029-07-29",
+      "2030-07-29"
+    ],
+    "hull_white": {
+      "mean_reversion": 0.03,
+      "volatility": 0.01
+    },
+    "monte_carlo": {
+      "paths": 10000,
+      "steps_per_year": 12,
+      "seed": 42
+    }
+  }
+}

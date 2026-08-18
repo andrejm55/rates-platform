@@ -1,0 +1,12 @@
+.DS_Store
+__pycache__/
+*.pyc
+.pytest_cache/
+*.log
+out/
+*.zip
+*.zip.sha256
+build/
+build-*/
+.venv/
+.env

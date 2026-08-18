@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="364" viewBox="0 0 980 364">
+  <rect width="980" height="364" fill="#f7f9fc"/>
+  <rect x="28" y="26" width="924" height="312" rx="8" fill="#ffffff" stroke="#c9d2df"/>
+  <rect x="28" y="26" width="924" height="10" rx="5" fill="#1f7a5a"/>
+  <text x="48" y="82" class="title">Calibration Validation Snapshot</text>
+  <text x="48" y="106" class="sub">Generated from runnable demo validation artifacts</text>
+  <text x="48" y="122" class="label">Discount calibration residual</text><text x="932" y="122" class="value" text-anchor="end">4.857e-17</text><line x1="48" y1="140" x2="932" y2="140" stroke="#d8dee8" stroke-width="1"/>
+<text x="48" y="176" class="label">Projection calibration residual</text><text x="932" y="176" class="value" text-anchor="end">1.527e-16</text><line x1="48" y1="194" x2="932" y2="194" stroke="#d8dee8" stroke-width="1"/>
+<text x="48" y="230" class="label">SABR smile RMSE</text><text x="932" y="230" class="value" text-anchor="end">0.000304384</text><line x1="48" y1="248" x2="932" y2="248" stroke="#d8dee8" stroke-width="1"/>
+<text x="48" y="284" class="label">SABR alpha / rho / nu</text><text x="932" y="284" class="value" text-anchor="end">0.0510293 / -0.124148 / 0.744085</text><line x1="48" y1="302" x2="932" y2="302" stroke="#d8dee8" stroke-width="1"/>
+  <style>
+    .title { font: 700 28px Arial, sans-serif; fill: #182230; }
+    .sub { font: 400 14px Arial, sans-serif; fill: #667085; }
+    .label { font: 600 18px Arial, sans-serif; fill: #344054; }
+    .value { font: 500 18px Arial, sans-serif; fill: #101828; }
+  </style>
+</svg>

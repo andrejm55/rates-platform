@@ -1,0 +1,43 @@
+{
+    "request_type": "portfolio",
+    "result": {
+        "portfolio_id": "DEMO-RATES-BOOK",
+        "present_value_by_book": {
+            "EXOTICS": 15385.8642985667,
+            "OPTIONS": 21123.4518173528,
+            "SWAPS": -28321.681660691
+        },
+        "total_present_value": 8187.6344552285,
+        "trades": [
+            {
+                "book": "SWAPS",
+                "currency": "GBP",
+                "error": "",
+                "present_value": -14160.8408303455,
+                "quantity": 1,
+                "success": true,
+                "trade_id": "SWAP-001"
+            },
+            {
+                "book": "OPTIONS",
+                "currency": "GBP",
+                "error": "",
+                "present_value": 10561.7259086764,
+                "quantity": 1,
+                "success": true,
+                "trade_id": "SWO-001"
+            },
+            {
+                "book": "EXOTICS",
+                "currency": "GBP",
+                "error": "",
+                "present_value": 7692.93214928335,
+                "quantity": 1,
+                "success": true,
+                "trade_id": "BERM-001"
+            }
+        ]
+    },
+    "snapshot_id": "GBP-DEMO-2026-07-27",
+    "success": true
+}

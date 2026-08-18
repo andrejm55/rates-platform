@@ -1,0 +1,33 @@
+{
+    "request_type": "european_swaption",
+    "result": {
+        "annuity": 4316556.34684758,
+        "cash_flows": [],
+        "currency": "GBP",
+        "diagnostics": {
+            "converged": true,
+            "engine": "AnalyticEuropeanSwaptionEngine",
+            "iterations": 0,
+            "metrics": {
+                "expiry_years": 1.00547945205479,
+                "forward_swap_rate": 0.0383597062458495,
+                "strike": 0.04,
+                "underlying_tenor_years": 5.00547945205479
+            },
+            "model": "Bachelier",
+            "standard_error": 0,
+            "warnings": []
+        },
+        "implied_volatility": 0.00780372602739726,
+        "par_rate": 0.0383597062458495,
+        "present_value": 10229.9924110811,
+        "sensitivities": {
+            "forward_delta": 1799926.63390078,
+            "forward_gamma": 215286741.914038,
+            "vega_per_1.00": 1689244.44301569,
+            "vega_per_1pct": 16892.4444301569
+        }
+    },
+    "snapshot_id": "GBP-DEMO-2026-07-27",
+    "success": true
+}
